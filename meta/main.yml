@@ -2,7 +2,7 @@
 galaxy_info:
   author: Matthew Hager
   company: Poetic Systems
-  description: Short Stack role that installs vim and common configuration.
+  description: Installs vim and common configuration.
   license: MIT
   min_ansible_version: 1.8
   platforms:

@@ -1,6 +1,7 @@
 Short Stack: Vim
 =========
 [![Build Status](https://travis-ci.org/poetic/short-stack-vim.svg)](https://travis-ci.org/poetic/short-stack-vim)
+
 Installs vim and common configuration.
 
 Requirements

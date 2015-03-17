@@ -28,12 +28,7 @@
 - name: add configuration to stack.d
   copy: src={{ item }} dest={{ stack_d }}
   with_items:
-    - common.bundle
-    - common.vimrc
-    - javascript.bundle
-    - javascript.vimrc.before
-    - ruby.bundle
+    - vim.bundle
+    - vim.vimrc
+    - vim.zsh
   notify: vim bundle install
-
-- name: add vim configuration to zsh
-  copy: src=vim.zsh dest={{ stack_d }}
