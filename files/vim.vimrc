@@ -1,11 +1,8 @@
-" vim-airline {
-  let g:airline_powerline_fonts=1
-  let g:airline_theme='badwolf'
-  let g:airline#extensions#bufferline#enabled = 0
-" }
+" vim-airline configuration
+let g:airline_powerline_fonts=1
+let g:airline#extensions#bufferline#enabled = 0
 
-"
-" Map leader
+" Map , to leader
 let mapleader = ","
 
 " Map jj to <Esc>
@@ -14,13 +11,13 @@ let mapleader = ","
 " Use ; as :
 nnoremap ; :
 
-" Undo highlighted searches
+" Map comma space to unhighlight
 nnoremap <leader><space> :noh<cr>
 
 " Indent every line in the file with <leader>i
 nnoremap <Leader>i mmgg=G`m
 
-" Removes trailing spaces
+" Removes trailing spaces on save
 function! TrimWhiteSpace()
   %s/\s\+$//e
 endfunction
@@ -38,3 +35,7 @@ set softtabstop=2
 
 " Don't close NERDTree when opening a file
 let NERDTreeQuitOnOpen=0
+
+" Make solarized work properly with iTerm2 when using solarized scheme
+let g:solarized_termcolors=16
+color solarized
