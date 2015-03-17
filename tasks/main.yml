@@ -29,6 +29,7 @@
   copy: src={{ item }} dest={{ stack_d }}
   with_items:
     - vim.bundle
+    - vim.vimrc.before
     - vim.vimrc
     - vim.zsh
   notify: vim bundle install
