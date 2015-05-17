@@ -1,6 +1,6 @@
 ---
 - name: install/update vim
-  homebrew: name=vim state=latest
+  homebrew: name=vim state=latest install_options=with-lua
 
 - name: install/update ctags
   homebrew: name=ctags state=latest
