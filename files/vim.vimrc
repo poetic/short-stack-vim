@@ -17,7 +17,7 @@ nnoremap <leader><space> :noh<cr>
 " Indent every line in the file with <leader>i
 nnoremap <Leader>i mmgg=G`m
 
-" Removes trailing spaces on save
+" Function to removes trailing spaces
 function! TrimWhiteSpace()
   %s/\s\+$//e
 endfunction
@@ -39,3 +39,7 @@ let NERDTreeQuitOnOpen=0
 " Make solarized work properly with iTerm2 when using solarized scheme
 let g:solarized_termcolors=16
 color solarized
+
+" Set textwidth to 80 and colorcolumn to textwidth+1 so that text will wrap
+set textwidth=80
+set colorcolumn=+1
