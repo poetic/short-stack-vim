@@ -9,14 +9,14 @@
   shell: curl https://j.mp/spf13-vim3 -L -o - | sh
   args:
     creates: ~/.spf13-vim-3/.vimrc
-  notify: vim bundle install
+  notify: vim plugin install
 
 - name: update spf13
   git:
   args:
     repo: https://github.com/spf13/spf13-vim.git
     dest: ~/.spf13-vim-3
-  notify: vim bundle install
+  notify: vim plugin install
 
 - name: add .fork shims for stack.d support
   copy: src={{ item }} dest=~/.{{ item }}
@@ -32,4 +32,4 @@
     - vim.vimrc.before
     - vim.vimrc
     - vim.zsh
-  notify: vim bundle install
+  notify: vim plugin install
